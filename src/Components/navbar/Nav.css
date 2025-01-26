@@ -1,0 +1,36 @@
+/* Base style for nav links */
+.navlink {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: medium;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.navlink:hover {
+  color: #007bff;
+  /* Change to your desired hover color */
+}
+
+/* Underline effect for active tab */
+.navlink.active::after,
+.navlink:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  /* Adjust distance from the text */
+  width: 100%;
+  height: 2px;
+  /* Adjust the thickness of the underline */
+  background-color: #007bff;
+  /* Change to your desired underline color */
+  transition: width 0.3s ease-in-out;
+}
+
+/* Hover effect makes underline visible */
+.navlink::after {
+  width: 0%;
+}

@@ -1,0 +1,87 @@
+/* Chat Page Styling */
+.chat-page {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.chat-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.audio-control-panel {
+    background-color: #f5f7fa;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.audio-icon-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.audio-icon-section h5 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.recent-audio-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recent-audio-list li {
+    padding: 10px;
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+.message-area {
+    padding: 20px;
+}
+
+.message-box {
+    background-color: #f1f3f6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+.microphone-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.microphone-controls button {
+    width: 150px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:disabled {
+    opacity: 0.6;
+}
